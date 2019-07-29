@@ -134,3 +134,17 @@ html,
 body {
   height: 100%;
 }
+body header {
+  background-color: black;
+}
+body header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+body header nav a {
+  text-decoration: none;
+  color: white;
+}
+body main {
+  width: 70%;
+}
