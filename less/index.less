@@ -65,25 +65,35 @@ body {
  header {
     background-color: black;
     color: @darkgbtext;
-   
+    display: flex;
   nav {
     display: flex;
     justify-content: flex-end;
-    
+  
     a{
       text-decoration: none;
       color: @darkgbtext;
     }
   }
+  img {
+    width: 30%;
+    height: 100%;
+  }
+
  }
 
   .bottom-container{
-
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
 
     main {
       width: 70%;
+
+      .bio {
+        width: 80%;
+        padding-bottom: 40px;
+      }
 
       .history{
         display: flex;
@@ -94,7 +104,12 @@ body {
       width: 30%;
       color: @darkgbtext;
       background-color: black;
+      
     }
+  }
+
+  footer{
+    background-color: transparent;
   }
 }
 
