@@ -136,6 +136,7 @@ body {
 }
 body header {
   background-color: black;
+  color: white;
 }
 body header nav {
   display: flex;
@@ -145,6 +146,25 @@ body header nav a {
   text-decoration: none;
   color: white;
 }
-body main {
+body .bottom-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+body .bottom-container main {
   width: 70%;
+}
+body .bottom-container main .history {
+  display: flex;
+}
+body .bottom-container aside {
+  width: 30%;
+  color: white;
+  background-color: black;
+}
+.history .name-date {
+  width: 30%;
+}
+.history .description {
+  width: 50%;
+  padding-bottom: 20px;
 }

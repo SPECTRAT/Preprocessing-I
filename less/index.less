@@ -64,6 +64,7 @@ body {
 
  header {
     background-color: black;
+    color: @darkgbtext;
    
   nav {
     display: flex;
@@ -76,8 +77,34 @@ body {
   }
  }
 
-main {
-  width: 70%;
+  .bottom-container{
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    main {
+      width: 70%;
+
+      .history{
+        display: flex;
+      }
+    }
+
+    aside {
+      width: 30%;
+      color: @darkgbtext;
+      background-color: black;
+    }
+  }
 }
 
+.history {
+  .name-date {
+    width: 30%;
+  }
+
+  .description {
+   width: 50%;
+   padding-bottom: 20px;
+  }
 }
