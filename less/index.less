@@ -80,38 +80,34 @@ body {
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        
+        margin-right: 20px;
 
         a{
           text-decoration: none;
           color: @darkgbtext;
-          margin-left: 5%;
+          margin-left: 3%;
         }
       }
 
       .quote {
-        margin-top: 15%;
-        margin-bottom: 15%;
+        margin-top: 12%;
         margin-left: 20%;
         margin-right: 20%;
         position: absolute;
+        font-size: 1.5rem;
       }
 
       h1 {
         align-self: flex-end;
         position: absolute;
-        margin-left: -50px;
+        margin-left: -150px;
+        padding-bottom: 5px;
+        font-size: 3rem;
       }
 
     }//nav and quote
     
   }//header
-
-  
-
-  
-
- 
 
   .bottom-container{
     width: 100%;
@@ -120,7 +116,7 @@ body {
 
     main {
       width: 70%;
-      padding: 5%;
+      
 
       h2{
         margin-bottom: 25px;
@@ -130,6 +126,11 @@ body {
       .bio {
         width: 80%;
         padding-bottom: 40px;
+        margin: 0 auto;
+      }
+
+      .work-history {
+        margin: 0 auto;
       }
 
       .history{
@@ -146,7 +147,12 @@ body {
   }
 
   footer{
-    background-color: transparent;
+    background-color: black;
+    color: @darkgbtext;
+    p {
+      margin-left: 40%;
+      margin-right: 40%;
+    }
   }
 }
 
