@@ -179,9 +179,10 @@ body header .nav-and-quote nav a {
   font-family: 'Crimson Pro', serif;
 }
 body header .nav-and-quote .quote {
-  width: 600px;
+  width: 40%;
   margin-top: 10%;
-  margin-left: 12%;
+  margin-left: 15%;
+  margin-right: 15%;
   position: absolute;
   font-size: 1.75rem;
   color: #616161;
@@ -266,9 +267,7 @@ body .bottom-container aside .contact {
 body footer {
   background-color: black;
   color: white;
-  width: 100%;
-}
-body footer h6 {
-  margin-left: 40%;
-  margin-right: 45%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
