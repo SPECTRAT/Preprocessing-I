@@ -130,6 +130,15 @@ table {
 * {
   box-sizing: border-box;
 }
+.tileText {
+  color: #d1212a;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+.bodyText {
+  line-height: 1.5;
+  color: #616161;
+}
 html,
 body {
   height: 100%;
@@ -157,14 +166,15 @@ body header .nav-and-quote nav {
 }
 body header .nav-and-quote nav a {
   text-decoration: none;
-  color: white;
+  color: #d1212a;
   margin-left: 3%;
 }
 body header .nav-and-quote .quote {
   margin-top: 13%;
-  margin-left: 15%;
+  margin-left: 12%;
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  color: #616161;
 }
 body header .nav-and-quote h1 {
   align-self: flex-end;
@@ -178,17 +188,30 @@ body .bottom-container {
   display: flex;
   flex-direction: row-reverse;
 }
+body .bottom-container h3 {
+  color: #d1212a;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
 body .bottom-container main {
   width: 70%;
+}
+body .bottom-container main p {
+  line-height: 1.5;
+  color: #616161;
 }
 body .bottom-container main h2 {
   margin-bottom: 25px;
   font-size: 2rem;
 }
+body .bottom-container main h4 {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
 body .bottom-container main .bio {
   width: 80%;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-top: 80px;
   margin-left: 10%;
 }
 body .bottom-container main .work-history {
@@ -205,13 +228,13 @@ body .bottom-container main .history .name-date {
 }
 body .bottom-container main .history .description {
   width: 70%;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 body .bottom-container aside {
   width: 30%;
   color: white;
   background-color: black;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
@@ -226,7 +249,7 @@ body .bottom-container aside .skills {
 }
 body .bottom-container aside .contact {
   line-height: 1.75;
-  padding-bottom: 30%;
+  padding-bottom: 45%;
 }
 body footer {
   background-color: black;
