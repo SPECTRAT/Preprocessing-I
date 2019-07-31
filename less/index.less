@@ -76,11 +76,13 @@ body {
     .nav-and-quote{
      width: 100%;
       display: flex;
+
       nav {  
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        margin-right: 20px;
+        margin-right: 10%;
+        padding-top: 30px;
 
         a{
           text-decoration: none;
@@ -90,9 +92,8 @@ body {
       }
 
       .quote {
-        margin-top: 12%;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-top: 13%;
+        margin-left: 15%;
         position: absolute;
         font-size: 1.5rem;
       }
@@ -126,43 +127,72 @@ body {
       .bio {
         width: 80%;
         padding-bottom: 40px;
-        margin: 0 auto;
+        padding-top: 40px;
+        margin-left: 10%;
       }
 
       .work-history {
-        margin: 0 auto;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+
       }
 
       .history{
         display: flex;
+        justify-content: space-between;
+
+        .name-date {
+          width: 30%;
+        }
+
+        .description {
+         width: 70%;
+         padding-bottom: 20px;
+        }
       }
-    }
+    }//main
 
     aside {
       width: 30%;
       color: @darkgbtext;
       background-color: black;
-      
-    }
-  }
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
+      .education {
+        //margin-bottom: 50px;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+      
+      .skills {
+        //margin-bottom: 50px;
+        line-height: 1.5;
+      }
+
+      .contact{
+        line-height: 1.75;
+        padding-bottom: 30%;
+      }
+    }//aside
+  }//bottom container
+
+  
   footer{
     background-color: black;
     color: @darkgbtext;
-    p {
+    width: 100%;
+    
+    h6 {
       margin-left: 40%;
-      margin-right: 40%;
+      margin-right: 45%;
     }
   }
-}
 
-.history {
-  .name-date {
-    width: 30%;
-  }
-
-  .description {
-   width: 50%;
-   padding-bottom: 20px;
-  }
-}
+}//body
