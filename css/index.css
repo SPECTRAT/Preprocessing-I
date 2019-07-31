@@ -143,6 +143,14 @@ html,
 body {
   height: 100%;
 }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Crimson Pro', serif;
+}
 body header {
   background-color: black;
   color: white;
@@ -168,13 +176,17 @@ body header .nav-and-quote nav a {
   text-decoration: none;
   color: #d1212a;
   margin-left: 3%;
+  font-family: 'Crimson Pro', serif;
 }
 body header .nav-and-quote .quote {
-  margin-top: 13%;
+  width: 600px;
+  margin-top: 10%;
   margin-left: 12%;
   position: absolute;
   font-size: 1.75rem;
   color: #616161;
+  font-family: 'Beth Ellen', cursive;
+  line-height: 1.5;
 }
 body header .nav-and-quote h1 {
   align-self: flex-end;
