@@ -53,11 +53,12 @@ table {
     box-sizing: border-box;
 }
 
-
+//variables//
 @darkgbtext: white;
 @darkHighlightText: #d1212a;
 @titles: 'Crimson Pro', serif;
 
+//mixins
 .tileText {
   color: @darkHighlightText;
   margin-bottom: 10px;
@@ -69,6 +70,14 @@ table {
   color: #616161;
 }
 
+.link-hover {
+  text-decoration: none;
+  color: @darkHighlightText;
+  &:hover{ 
+    color: darken(@darkHighlightText, 15%);
+  }
+}
+//code
 html, body {
     height: 100%; 
 }
@@ -102,8 +111,7 @@ body {
         padding-top: 30px;
 
         a{
-          text-decoration: none;
-          color: @darkHighlightText;
+          .link-hover();
           margin-left: 3%;
           font-family: @titles;
         }
@@ -221,6 +229,9 @@ body {
       .contact{
         line-height: 1.75;
         padding-bottom: 45%;
+        .contact-link {
+          .link-hover();
+        }
       }
     }//aside
   }//bottom container

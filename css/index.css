@@ -139,6 +139,13 @@ table {
   line-height: 1.5;
   color: #616161;
 }
+.link-hover {
+  text-decoration: none;
+  color: #d1212a;
+}
+.link-hover:hover {
+  color: #8f171d;
+}
 html,
 body {
   height: 100%;
@@ -177,6 +184,9 @@ body header .nav-and-quote nav a {
   color: #d1212a;
   margin-left: 3%;
   font-family: 'Crimson Pro', serif;
+}
+body header .nav-and-quote nav a:hover {
+  color: #8f171d;
 }
 body header .nav-and-quote .quote {
   width: 40%;
@@ -277,6 +287,13 @@ body .bottom-container aside .skills {
 body .bottom-container aside .contact {
   line-height: 1.75;
   padding-bottom: 45%;
+}
+body .bottom-container aside .contact .contact-link {
+  text-decoration: none;
+  color: #d1212a;
+}
+body .bottom-container aside .contact .contact-link:hover {
+  color: #8f171d;
 }
 body footer {
   background-color: black;
