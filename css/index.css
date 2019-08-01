@@ -130,6 +130,10 @@ table {
 * {
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
 .tileText {
   color: #d1212a;
   margin-bottom: 10px;
@@ -145,10 +149,6 @@ table {
 }
 .link-hover:hover {
   color: #8f171d;
-}
-html,
-body {
-  height: 100%;
 }
 body h1,
 body h2,
@@ -226,6 +226,7 @@ body header .nav-and-quote nav a {
   color: #d1212a;
   margin-left: 3%;
   font-family: 'Crimson Pro', serif;
+  height: 5%;
 }
 body header .nav-and-quote nav a:hover {
   color: #8f171d;
@@ -323,6 +324,11 @@ body .bottom-container main .bio {
 body .bottom-container main .work-history {
   margin: 30px 10% 50px 10%;
 }
+@media (max-width: 580px) {
+  body .bottom-container main .work-history {
+    margin-bottom: 0px;
+  }
+}
 body .bottom-container main .history {
   display: flex;
   justify-content: space-between;
@@ -343,20 +349,26 @@ body .bottom-container aside {
   width: 30%;
   color: white;
   background-color: black;
-  padding: 80px 50px 0px 50px;
+  padding: 80px 50px 28% 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 580px) {
+  body .bottom-container aside {
+    width: 100%;
+    padding-top: 50px;
+  }
+}
 body .bottom-container aside .education li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
 body .bottom-container aside .skills {
   line-height: 1.5;
 }
 body .bottom-container aside .contact {
   line-height: 1.75;
-  padding-bottom: 45%;
 }
 body .bottom-container aside .contact .contact-link {
   text-decoration: none;

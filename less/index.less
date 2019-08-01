@@ -53,7 +53,12 @@ table {
     box-sizing: border-box;
 }
 
-//variables//
+html, body {
+    height: 100%; 
+}
+
+
+//variables
 @darkgbtext: white;
 @darkHighlightText: #d1212a;
 @titles: 'Crimson Pro', serif;
@@ -77,10 +82,8 @@ table {
     color: darken(@darkHighlightText, 15%);
   }
 }
+
 //code
-html, body {
-    height: 100%; 
-}
 
 body {
 
@@ -147,6 +150,7 @@ body {
           .link-hover();
           margin-left: 3%;
           font-family: @titles;
+          height: 5%;
         }
       }
 
@@ -239,6 +243,9 @@ body {
 
       .work-history {
         margin: 30px 10% 50px 10%;
+        @media(max-width:580px){
+          margin-bottom: 0px;
+        }
       }
 
       .history{
@@ -264,14 +271,20 @@ body {
       width: 30%;
       color: @darkgbtext;
       background-color: black;
-      padding: 80px 50px 0px 50px;
+      padding: 80px 50px 28% 50px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
+      @media(max-width:580px){
+        width: 100%;
+        padding-top: 50px;
+      }
+
       .education {
         li {
-          margin-bottom: 10px;
+          margin-bottom: 15px;
+          line-height: 1.5;
         }
       }
       
@@ -281,10 +294,10 @@ body {
 
       .contact{
         line-height: 1.75;
-        padding-bottom: 45%;
         .contact-link {
           .link-hover();
         }
+        
       }
     }//aside
   }//bottom container
