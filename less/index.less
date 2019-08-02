@@ -54,6 +54,261 @@ table {
 }
 
 html, body {
-    height: 100%;
+    height: 100%; 
 }
 
+
+//variables
+@darkgbtext: white;
+@darkHighlightText: #d1212a;
+@titles: 'Crimson Pro', serif;
+
+//mixins
+.tileText {
+  color: @darkHighlightText;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.bodyText {
+  line-height: 1.5;
+  color: #616161;
+}
+
+.link-hover {
+  text-decoration: none;
+  color: @darkHighlightText;
+  &:hover{ 
+    color: darken(@darkHighlightText, 15%);
+  }
+}
+
+//code
+
+body {
+
+ h1, h2, h3, h4, h5, h6 {
+   font-family: @titles;
+ } 
+
+ header {
+    background-color: black;
+    color: @darkgbtext;
+    display: flex;
+    position: relative;
+    .querynav, .queryname, .queryquote{
+      display:none;
+    }
+    @media (max-width: 580px){
+      flex-direction: column;
+      .querynav{
+        display: flex;
+        justify-content: space-evenly; 
+        height: 3rem;
+        align-items: center;
+          a {
+            .link-hover();
+          }
+      }
+
+      .queryname {
+        display: block;
+        position: absolute;
+        margin-top: 90%;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+    
+    
+
+    img {
+      width: 30%;
+      height: 100%;
+      @media(max-width: 580px){
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .nav-and-quote{
+     width: 100%;
+    display: flex;
+    @media (max-width: 580px){
+      display: none;
+    }  
+
+      nav {  
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+        padding-top: 30px;
+
+        a{
+          .link-hover();
+          margin-left: 3%;
+          font-family: @titles;
+          height: 5%;
+        }
+      }
+
+      .quote {
+        width: 40%;
+        margin-top: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
+        position: absolute;
+        font-size: 1.75rem;
+        color: #616161;
+        font-family: 'Beth Ellen', cursive;
+        line-height: 1.5;
+        @media(max-width:1010px){
+          font-size: 1.25rem;
+          margin-top: 9%;
+        }
+        @media(max-width:705px){
+          font-size: 1rem;
+        }
+      }
+
+      h1 {
+        align-self: flex-end;
+        position: absolute;
+        margin-left: -150px;
+        padding-bottom: 5px;
+        font-size: 3rem;
+        @media(max-width:870px){
+          font-size: 2.25rem;
+        }
+      }
+
+    }//nav and quote
+    
+  }//header
+
+  .bottom-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+
+    @media (max-width: 580px) {
+      flex-direction: column;
+    }
+
+    h3 {
+      .tileText();
+    }
+
+    main {
+      width: 70%;
+      @media (max-width: 580px){
+        width: 100%;
+      }
+      
+      p {
+        .bodyText();
+        line-height: 1.4;
+      }
+
+      h2{
+        margin-bottom: 25px;
+        font-size: 2rem;
+      }
+
+      h4 {
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+      }
+    
+      .bio {
+        width: 80%;
+        padding: 80px 0px;
+        margin-left: 10%;
+        @media (max-width:580px){
+          width: 100%;
+          background-color: black;
+          margin: 0;
+          padding: 30px 0px;
+          h2 {
+            color: @darkHighlightText;
+            margin-left: 10%;
+          }
+          p {
+            margin: 0 10%;
+          }
+        }
+      }
+
+      .work-history {
+        margin: 30px 10% 50px 10%;
+        @media(max-width:580px){
+          margin-bottom: 0px;
+        }
+      }
+
+      .history{
+        display: flex;
+        justify-content: space-between;
+        
+
+        .name-date {
+          width: 30%;
+        }
+
+        .description {
+         width: 70%;
+         padding-bottom: 50px;
+         @media(max-width:580px){
+           margin-left: 15px;
+         }
+        }
+      }
+    }//main
+
+    aside {
+      width: 30%;
+      color: @darkgbtext;
+      background-color: black;
+      padding: 80px 50px 28% 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media(max-width:580px){
+        width: 100%;
+        padding-top: 50px;
+      }
+
+      .education {
+        li {
+          margin-bottom: 15px;
+          line-height: 1.5;
+        }
+      }
+      
+      .skills {
+        line-height: 1.5;
+      }
+
+      .contact{
+        line-height: 1.75;
+        .contact-link {
+          .link-hover();
+        }
+        
+      }
+    }//aside
+  }//bottom container
+
+  
+  footer{
+    background-color: black;
+    color: @darkgbtext;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}//body
